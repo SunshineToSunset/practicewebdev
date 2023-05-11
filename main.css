@@ -1,0 +1,221 @@
+body{
+  font: Arial,Helvetica, sans-serif;
+}
+
+#container {
+    width: 1050px;
+    border: 1px solid grey; 
+    margin: 0 auto;
+    position: relative;
+ }
+ #header{
+    height: 150px;
+    padding: 10px 0;
+
+ }
+ #brand{
+    float:left;
+ }
+ h1 a{
+    font-size: 50px;
+    font-weight: 100;
+    color: rgb(11, 10, 12);
+    text-decoration: none;
+    position: relative;
+    margin-top: 10;
+
+ }
+ #searchBox{
+    float: right;
+    background: linear-gradient(#02e1ff,#fc1d89) ;
+    width: 450px;
+    height: 90px;
+    position: absolute;
+  top: 0;
+  right: 0;
+  margin-top:  30.2px;
+  padding: 20px 20px 0 20;
+  
+}
+
+.text {
+    display: inline-block;
+    width: 190px;
+    padding: 5px;
+    font-size: 15px;
+    color: #00bffe;
+    margin: 28px 0 0 0;
+    margin-left: 10px;
+    background-color: white;
+    background-image: url('https://www.freepnglogos.com/uploads/search-png/search-icon-transparent-images-vector-15.png');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 5px solid #0f1010;
+}
+
+.submit{
+    float: right;
+    padding: 5px 20px;
+    font-weight: bold;
+    color: white;
+    background: rgb(0, 0, 0);
+    font-size: 15px;
+    margin: 28px 0 0 0;
+    margin-right: 10px;
+}
+.clear{
+   clear: both;
+}
+#menu {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 90px;
+   background: linear-gradient( #2ac3ff,#ff1174);
+ }
+ 
+ #menu ul {
+   display: inline-flex;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   justify-content: space-between;
+   align-items: center;
+  
+ }
+ 
+ #menu ul li {
+   float: left;
+   padding: 0 30px;
+   height: 100%;
+   border-right: 2px solid rgb(0, 0, 0);
+   display: flex;
+   align-items: center;
+ }
+ 
+ #menu ul li:last-child {
+   border-right: none;
+ }
+ 
+ #menu ul li a {
+   text-decoration: none;
+   color: rgb(15, 13, 16);
+   text-transform: uppercase;
+   font-size: 20px;
+   line-height: 30px;
+   font-weight: 600;
+   
+ }
+ #menu ul li a.active{
+   font-size: 22px;
+   font-weight: bold;
+   color: #ffffff;
+   -webkit-transition: font-size 0.3s ease;
+   -moz-transition: font-size 0.3s ease;
+   -o-transition: font-size 0.3s ease;
+   -ms-transition: font-size 0.3s ease;
+   transition: font-size 0.3s ease;
+ }
+ #menu ul li a:hover {
+   font-size: 22px;
+   font-weight:bold ;
+   color: #fffcff ;
+ }
+ #Introduction{
+  background: linear-gradient(rgb(6, 211, 252) ,#ff0291 );
+  padding: 30px;
+  margin: 16px 0;
+ }
+ #Introduction h3{
+  font-size: 45px;
+  color: black;
+  font-weight: normal;
+ }
+ #introduction p{
+  font-size: 25px;
+  color: rgb(6, 6, 5);
+  text-align: justify;
+ }
+ .sidebars{
+  height: 500px;
+  width: 400px;
+  border:2px solid black;
+  border-radius: 20px;
+  padding: 10px 20px;
+  list-style: none;
+}
+.sidebars h3{
+  color: black;
+  font-size: 40px;
+  font-weight: 2px;
+  transition: font-size 0.3s ease;
+  -webkit-transition: font-size 0.3s ease;
+   -moz-transition: font-size 0.3s ease;
+   -o-transition: font-size 0.3s ease;
+   -ms-transition: font-size 0.3s ease;
+   transition: font-size 0.3s ease;
+}
+
+
+.sidebars h3:hover{
+  font-size: 45px;
+   font-weight:bold ;
+   color: #f80858 ;
+}
+.sidebars ul {
+  list-style: none; /* Remove default bullets */
+  padding-left: 0; /* Remove default left padding */
+}
+
+.sidebars ul li {
+  position: relative; /* Create a positioning context for the arrow icon */
+  padding-left: 30px; /* Add left padding for the arrow icon */
+}
+
+.sidebars ul li::before {
+  content: ""; /* Create a pseudo-element */
+  position: absolute;
+  top: 50%; /* Position the arrow vertically in the middle */
+  left: 0;
+  transform: translateY(-50%); /* Adjust for vertical centering */
+  width: 16px;
+  height: 16px;
+  background-image: url('https://icon-library.com/images/arrow-icon-png/arrow-icon-png-4.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.sidebars ul li a {
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  padding-left: 2px; /* Add some spacing between the arrow and the text */
+  display: inline-block; /* Ensure the arrow and text are on the same line */
+  vertical-align: middle; /* Align the text vertically with the arrow */
+}
+
+.sidebars ul li a:hover,
+.sidebars ul li a.active {
+  font-size: 30px;
+  font-weight: bold;
+  color: #0fdafe;
+}
+ #leftsidebar{
+  float:left;
+
+ }
+ #rightsidebar{
+  float: right;
+ }
+ .footer{
+  height: 60px;
+  background: #0fdafe;
+  padding: 10px 30px;
+  margin-top: 15px;
+
+ }
+
+
+
