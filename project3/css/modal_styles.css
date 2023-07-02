@@ -1,0 +1,227 @@
+.add_pin_modal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999999;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.add_pin_container {
+    padding: 35px; /* Adjusted padding */
+    width: 700px; /* Adjusted width */
+    height: 450px; /* Adjusted height */
+    border-radius: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    display: flex;
+    background-color: rgba(239, 239,239,1)
+}
+
+.side {
+    padding: 25px;
+    width: 70%;
+    height: 90%;
+}
+
+#right_side {
+    background-color: rgb(142, 225, 253);
+}
+
+#left_side {
+    background-color: rgb(161, 254, 208);
+}
+
+.pint_mock_icon_container {
+    width:30px; /* Adjusted width */
+    height: 30px; /* Adjusted height */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.pint_mock_icon {
+    width: 50%;
+}
+.section1{
+    width: 100%;
+    height: 8%;
+    background-color: rgb(189, 189, 189);
+}
+.section2{
+    padding: 0px,10px;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightpink;
+
+}
+.section3{
+    width: 100%;
+    height: 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(138, 225, 254);
+}
+    #left_side .section1 .pint_mock_icon_container{
+        width: 40px;
+        height: 40px;
+
+        background-color: rgba(239, 239,239,0);
+        transition-duration: 0.3s;
+
+    }
+    #left_side .section1 .pint_mock_icon_container:hover{
+        background-color: rgba(239, 239,239,1);
+    }
+    #left_side .section1 #upload_img_label {
+        width: 90%;
+        height: 155%; /* Adjusted height */
+        cursor: pointer;
+    }
+    #left_side .section2 .uploa_img_label input{
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+
+    }
+    
+    #left_side .section2 #upload_img_label .upload_img_container {
+        padding: 5px;
+        width: 90%;
+        height: 220%; /* Adjusted height */
+        border-radius: 8px;
+        background-color: aliceblue;
+        display: flex; /* Added display property */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        position: relative; /* Added position property */
+        top: -5%; /* Adjusted top value */
+        left: 3%;
+    }
+    
+    #left_side .section2 #upload_img_label .upload_img_container #dotted_border {
+        width: 100%; /* Adjusted width */
+        height: 100%; /* Adjusted height */
+        border-radius: 8px;
+        border: 2px dashed #dadada;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+    }
+    
+    #left_side .section2 #upload_img_label {
+        position: relative;
+        top: -80px; /* Adjusted top value */
+        left: 0;
+    }
+    #left_side .section2 .pint_mock_icon_container{
+        width: 20%;
+        height: 20%;
+    }
+    #left_side .section3 .save_from_site{
+
+        width: 280px;
+        height:35px;
+        border-radius:22px ;
+        background-color: #efefef;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        font-weight: 700;
+    }
+    .modal_pin{
+        width: 240px;
+        height: 448px;
+        border-radius: 16px;
+        position: relative;
+        display: none;
+        opacity: 0;
+
+        overflow: hidden;
+    }
+    .pin_image{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .pin_image img{ 
+        max-height:100% ;
+    }
+    .pin_max_width{
+        max-width: 100%;
+    }
+    .pin_maxx_height{
+        max-height: 100%;
+    }
+    #right_side .section1 {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    #right_side .section1 .select_size {
+        width: 236px;
+        height: 25px;
+        display: flex;
+        align-items: center; /* Add align-items property */
+        margin-top: 3px; /* Add margin-top for spacing */
+    }
+    
+    #right_side .section1 .select_size select {
+        width: 80%;
+        height: 100%;
+        background-color: #efefef;
+        border: none;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        outline: none;
+        font-size: 16px;
+    
+    }
+    
+    #right_side .section1 .select_size .save_pin {
+        width: 50%;
+        height: 100%;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        background-color: burlywood;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        padding: 4px; /* Add padding for spacing */
+        margin-left: 3px; /* Add margin-left for spacing */
+        margin-right: 12px;
+        margin-top: 3px;
+        font-weight: 500; 
+        font-size: 20px;
+    }
+    #right_side .section2 .new_pin_input{
+        margin-bottom: 20px;
+        width: 100%;
+        height: 50px;
+        border: none;
+        border-bottom: 2px solid #c6c6c6;
+        font-size: 16px;
+        background-color: transparent;
+
+    }
+    

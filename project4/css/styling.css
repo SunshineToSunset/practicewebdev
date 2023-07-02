@@ -1,0 +1,64 @@
+#container {
+    width: 1050px;
+    border: 1px solid grey; 
+    margin: 0 auto;
+    position: relative;
+ }
+ #header{
+    height: 150px;
+    padding: 10px 0;
+
+ }
+ #brand{
+    float:left;
+ }
+ h1 a{
+    font-size: 50px;
+    font-weight: 100;
+    color: rgb(127, 6, 239);
+    text-decoration: none;
+    position: relative;
+    margin-top: 10;
+
+ }
+ #searchBox{
+    float: right;
+    background: linear-gradient(#e4f2b9,#b7e953) ;
+    width: 450px;
+    height: 90px;
+    position: absolute;
+  top: 0;
+  right: 0;
+  margin-top:  30.2px;
+  padding: 20px 20px 0 20;
+  
+}
+/* .img-SEARCH{
+    width: 22px;
+    height: 22px;
+} */
+.text {
+    display: inline-block;
+    width: 190px;
+    padding: 5px;
+    font-size: 15px;
+    color: #e36a0c;
+    margin: 28px 0 0 0;
+    margin-left: 10px;
+    background-color: white;
+    background-image: url('SEARCH.png');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.submit{
+    float: right;
+    padding: 5px 20px;
+    font-weight: bold;
+    color: white;
+    background: rgb(120, 3, 228);
+    font-size: 15px;
+    margin: 28px 0 0 0;
+    margin-right: 10px;
+}
