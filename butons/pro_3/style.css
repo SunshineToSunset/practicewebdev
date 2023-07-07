@@ -1,0 +1,51 @@
+body {
+    background-color: rgb(19, 19, 19);
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    
+  }
+  
+  button {
+    border: 0;
+    width: 200px;
+    height: 60px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 8px;
+    position: relative;
+    display: inline-block;
+    padding: 3px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 26px;
+    overflow: hidden;
+    animation: disco 2.5s linear infinite;
+  }
+  
+  @keyframes disco {
+    0% {
+      background-color: deeppink; /* Initial color */
+      box-shadow: 0 0 10px deeppink, 0 0 20px deeppink, 0 0 40px deeppink; /* Initial box shadow */
+    }
+    50% {
+      background-color: gold; /* Intermediate color */
+      box-shadow: 0 0 10px gold, 0 0 20px gold, 0 0 40px gold; /* Intermediate box shadow */
+    }
+    100% {
+      background-color: deepskyblue; /* Final color */
+      box-shadow: 0 0 10px deepskyblue, 0 0 20px deepskyblue, 0 0 40px deepskyblue; /* Final box shadow */
+    }
+  }
+
+  button:hover {
+    transform: scale(1.4);
+    box-shadow: 0 0 10px white, 0 0 20px white, 0 0 40px white;
+  }
+  button:active{
+    transform:scale(0.8);
+}
+
+  

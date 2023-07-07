@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #031321;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  a {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: hotpink;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 26px;
+    overflow: hidden;
+  }
+  
+  a:hover {
+    color: lightpink;
+    background: hotpink;
+    box-shadow: 0 0 10px hotpink, 0 0 40px hotpink, 0 0 80px hotpink;
+  }
+  
+  a span {
+    position: absolute;
+    display: block;
+  }
+  
+  a span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, hotpink);
+    animation: revolve-right 2s linear infinite;
+  }
+  
+  a span:nth-child(2) {
+    right: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, hotpink);
+    animation: revolve-down 2s linear infinite;
+  }
+  
+  a span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, hotpink);
+    animation: revolve-left 2s linear infinite;
+  }
+  
+  a span:nth-child(4) {
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, hotpink);
+    animation: revolve-up 2s linear infinite;
+  }
+  
+  @keyframes revolve-right {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  @keyframes revolve-down {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
+  
+  @keyframes revolve-left {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes revolve-up {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+  
